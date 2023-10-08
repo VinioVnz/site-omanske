@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="imagex/png" href="file:///C:/Users/Usuario/Documents/Codigos%20do%20vinizao/js/manske.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manske</title>
+    
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            font-family: candara;
+            background-color: #f42228;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #f42228;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FF908A;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-left: 150px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Estilos para o vídeo do YouTube no centro */
+        .central-iframe {
+            width: 100%;
+            height: 500px; /* Altura maior para o iframe central */
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para a barra lateral de playlist */
+        aside {
+            position: absolute;
+            top: 20px; /* Ajuste a distância a partir do topo conforme desejado */
+            right: 20px; /* Ajuste a distância a partir da direita conforme desejado */
+            width: 300px; /* Largura da barra lateral */
+            padding: 20px;
+            background-color: #FF908A;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para os iframes da barra lateral */
+        .lateral-iframe {
+            width: 100%;
+            height: 250px; /* Altura menor para os iframes laterais */
+            border: none;
+            margin-bottom: 10px;
+            border-radius:20px;
+        }
+
+        /* Estilos para o botão "Ir para o Canal" */
+        .chanel-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f42228; /* Cor de fundo do botão */
+            color: #FFFFFF; /* Cor do texto do botão */
+            text-decoration: none;
+            border-radius: 20px; /* Borda arredondada */
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease; /* Efeito de transição de cor de fundo */
+        }
+
+        .chanel-button:hover {
+            background-color: #D80000; /* Cor de fundo do botão ao passar o mouse */
+        }
+
+        /* Estilos para o botão "Twitter" */
+        .twitter-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0084b4; /* Cor de fundo do botão */
+            color: #FFFFFF; /* Cor do texto do botão */
+            text-decoration: none;
+            border-radius: 20px; /* Borda arredondada */
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease; /* Efeito de transição de cor de fundo */
+        }
+
+        .twitter-button:hover {
+            background-color: #00acee; /* Cor de fundo do botão ao passar o mouse */
+        }
+
+        .insta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366); /* Degradê de cores de fundo */
+    color: #FFFFFF; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 20px; /* Borda arredondada */
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Efeito de transição de cor de fundo */
+}
+
+.insta-button:hover {
+    background: linear-gradient(to right,#f89b37 , #f56f3e,#f72a49,#f7297b ); /* Degradê de cores de fundo ao passar o mouse */
+}
+        /* Estilos para a lista de reprodução */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: block; /* Tornar os links blocos para ocupar toda a largura da barra lateral */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="file:///C:/Users/Usuario/Documents/Codigos%20do%20vinizao/js/manskebanner-removebg-preview.png">
+    </header>
+
+    <aside>
+        <h2>Videos Anteriores</h2>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Fjh9OxzRht8&t=1s">Ice and Fire</a>
+                <iframe class="lateral-iframe" src="https://www.youtube.com/embed/Fjh9OxzRht8" frameborder="0" allowfullscreen></iframe>
+                
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=78NEP_Av8Eo">Desastres Naturais</a>
+                <iframe class="lateral-iframe" src="https://www.youtube.com/embed/78NEP_Av8Eo" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=XzsCw264kRQ">Esconde-Esconde Morph</a>
+                <iframe class="lateral-iframe" src="https://www.youtube.com/embed/XzsCw264kRQ" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <!-- Adicione mais vídeos e iframes conforme necessário -->
+        </ul>
+    </aside>
+
+    <div class="container">
+        <h2>Video Novo!</h2>
+        <iframe class="central-iframe" src="https://www.youtube.com/embed/e_Vj0Yt9dj0" frameborder="0" allowfullscreen></iframe>
+        <div class="button-container">
+            <a class="chanel-button" href="https://www.youtube.com/@_omanske_" target="_blank">Ir para o Canal</a>
+            <a class="twitter-button" href="https://twitter.com/_omanske_" target="_blank">Twitter</a>
+            <a class="insta-button" href="https://www.instagram.com/_omanske_/" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
